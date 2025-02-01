@@ -87,8 +87,8 @@
 
         NUM {
             bindings = <
-&kp LS(NUMBER_4)  &kp ASTERISK      &kp LS(NUMBER_8)      &kp LS(NUMBER_9)       &kp RS(LS(SEMI))                      &kp LS(SLASH)     &kp LS(NUMBER_1)   &kp TILDE       &kp LS(NUMBER_4)  &kp LS(NUMBER_5)
-&trans            &kp LS(NUMBER_3)  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN       &trans      &trans  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR        &kp PERCENT
+&kp LS(NUMBER_4)  &kp RS(COLON)     &kp LS(NUMBER_8)      &kp LS(NUMBER_9)       &kp RS(LS(SEMI))                      &kp LS(SLASH)     &kp LS(NUMBER_1)   &kp TILDE       &kp LS(NUMBER_4)  &kp LS(NUMBER_5)
+&trans            &kp LS(NUMBER_3)  &kp LEFT_BRACKET      &kp LBKT               &kp LEFT_BRACKET  &trans      &trans  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR        &kp PERCENT
 &trans            &trans            &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp MINUS         &trans      &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp BACKSLASH
 &trans            &trans            &trans                &trans                 &trans            &trans      &trans  &trans                                                                 &kp PIPE
             >;
