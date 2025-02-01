@@ -87,10 +87,10 @@
 
         NUM {
             bindings = <
-&kp LS(NUMBER_4)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_8)       &kp LS(NUMBER_9)   &kp RS(LS(SEMI))                      &kp LS(SLASH)     &kp LS(NUMBER_1)   &kp TILDE       &kp LS(NUMBER_4)  &kp LS(NUMBER_5)
-&trans            &kp LS(NUMBER_3)   &kp RIGHT_BRACKET      &kp BACKSLASH      &kp LEFT_BRACKET  &trans      &trans  &kp COLON         &kp SINGLE_QUOTE   &kp HASH        &kp DOLLAR        &kp PERCENT
-&trans            &trans             &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp MINUS         &trans      &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp BACKSLASH
-&trans            &trans             &trans                 &trans             &trans            &trans      &trans  &trans                                                                 &kp PIPE
+&kp LS(NUMBER_4)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_8)       &kp LS(NUMBER_9)   &kp RS(LS(SEMI))                      &kp LS(SLASH)  &kp LS(NUMBER_1)  &kp TILDE    &kp LS(NUMBER_4)  &kp LS(NUMBER_5)
+&trans            &kp LS(NUMBER_3)   &kp RIGHT_BRACKET      &kp BACKSLASH      &kp LEFT_BRACKET  &trans      &trans  &kp COLON      &kp SQT           &kp AT_SIGN  &kp SEMI          &kp EQUAL
+&trans            &trans             &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp MINUS         &trans      &trans  &kp UNDER      &kp AMPS          &kp PIPE     &kp GRAVE         &kp INT_YEN
+&trans            &trans             &trans                 &trans             &trans            &trans      &trans  &trans                                                          &kp PIPE
             >;
         };
 
