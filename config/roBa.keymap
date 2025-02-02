@@ -67,7 +67,7 @@
 
         NUM {
             bindings = <
-&kp LS(NUMBER_4)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_8)       &kp LS(NUMBER_9)   &kp RS(LS(SEMI))                      &kp LS(SLASH)  &kp LS(NUMBER_1)  &kp LS(GRAVE)    &kp LS(NUMBER_4)      &kp LS(NUMBER_5)
+&kp LS(NUMBER_4)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_8)       &kp LS(NUMBER_9)   &kp LS(SEMI)                          &kp LS(SLASH)  &kp LS(NUMBER_1)  &kp PLUS         &kp LS(NUMBER_4)      &kp LS(NUMBER_5)
 &trans            &kp LS(NUMBER_3)   &kp RIGHT_BRACKET      &kp BACKSLASH      &kp LEFT_BRACKET  &trans      &trans  &kp SQT        &kp AMPS          &kp AT_SIGN      &kp SEMI              &kp UNDER
 &trans            &trans             &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp MINUS         &trans      &trans  &kp MINUS      &kp LS(NUMBER_6)  &kp LS(INT_YEN)  &kp LS(LEFT_BRACKET)  &kp INT_YEN
 &trans            &trans             &trans                 &trans             &trans            &trans      &trans  &trans                                                                  &kp PIPE
