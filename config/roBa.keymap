@@ -29,6 +29,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        input_pass: input_pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F) &kp U &kp K &kp U &kp Y &kp A &kp M &kp A &kp P &kp A &kp S &kp S &kp N2 &kp N2 &kp N3 &kp N2 &kp ENTER>;
+            label = "INPUT_PASS";
+        };
     };
 
     behaviors {
