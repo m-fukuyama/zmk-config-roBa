@@ -20,6 +20,11 @@
             bindings = <&kp TAB>;
             key-positions = <0 1>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
@@ -83,10 +88,10 @@
 
         ARROW {
             bindings = <
-&kp F7  &kp F2  &kp LS(LC(F9))  &kp F9   &kp F5                       &kp COMMA   &kp N7        &kp N8        &kp N9        &kp LS(N5)
-&trans  &trans  &kp F12         &kp F11  &kp F10  &trans      &trans  &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
-&trans  &trans  &trans          &trans   &trans   &trans      &trans  &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans          &trans   &trans   &trans      &trans  &trans                                                &trans
+&kp F7  &kp F2  &kp LS(LC(F9))  &kp F9   &kp F5                           &kp COMMA   &kp N7        &kp N8        &kp N9        &kp LS(N5)
+&trans  &trans  &kp F12         &kp F11  &kp F10      &trans      &trans  &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
+&trans  &trans  &trans          &trans   &input_pass  &trans      &trans  &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans          &trans   &trans       &trans      &trans  &trans                                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
