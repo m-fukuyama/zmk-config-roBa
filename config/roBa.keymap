@@ -34,6 +34,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        type_fukuyama: type_fukuyama {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(F) &kp U &kp K &kp U &kp Y &kp A &kp M &kp A &kp P &kp A &kp S &kp S &kp N2 &kp N2 &kp N3 &kp N2 &kp RET>;
+            label = "TYPE_FUKUYAMA";
+        };
     };
 
     behaviors {
@@ -81,10 +88,10 @@
 
         ARROW {
             bindings = <
-&kp F7  &kp F2  &kp LS(LC(F9))  &kp F9   &kp F5                           &kp COMMA   &kp N7        &kp N8        &kp N9        &kp LS(N5)
-&trans  &trans  &kp F12         &kp F11  &kp F10      &trans      &trans  &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
-&trans  &trans  &trans          &trans   &input_pass  &trans      &trans  &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans          &trans   &trans       &trans      &trans  &trans                                                &trans
+&kp F7  &kp F2  &kp LS(LC(F9))  &kp F9   &kp F5                              &kp COMMA   &kp N7        &kp N8        &kp N9        &kp LS(N5)
+&trans  &trans  &kp F12         &kp F11  &kp F10         &trans      &trans  &kp PERIOD  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
+&trans  &trans  &trans          &trans   &type_fukuyama  &trans      &trans  &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans  &trans  &trans          &trans   &trans          &trans      &trans  &trans                                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
