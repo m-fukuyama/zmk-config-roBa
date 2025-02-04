@@ -23,7 +23,7 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <9 8>;
+            key-positions = <20 19>;
         };
     };
 
@@ -61,7 +61,7 @@
             bindings = <
 &kp Q               &kp W         &kp E         &kp R                   &kp T                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
 &mt LEFT_CONTROL A  &kp S         &kp D         &kp F                   &kp G                 &trans                    &trans           &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                   &kp B                 &trans                    &kp BACKSPACE    &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                   &kp B                 &trans                    &trans           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp TAB             &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL GRAVE  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 3 DEL      &lt 2 BACKSPACE  &lt 1 ENTER                             &lt 6 ESC
             >;
 
@@ -99,10 +99,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                                                        &trans                  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans                      &trans                  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans                      &trans                  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &lt_to_layer_0 3 DEL      &lt_to_layer_0 2 BACKSPACE  &lt_to_layer_0 1 ENTER                                &trans
             >;
         };
 
