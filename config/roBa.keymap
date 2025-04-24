@@ -73,10 +73,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E         &kp R                 &kp T                                                             &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                 &kp G                 &kp LG(F3)                &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                 &kp B                 &kp LANG2                 &kp LANG1         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LG(UP_ARROW)    &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 3 DEL      &lt 2 BACKSPACE   &lt 1 ENTER                             &lt 6 ESC
+&mt LEFT_GUI Q      &kp W          &kp E             &kp R                 &kp T                                                             &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S          &kp D             &kp F                 &kp G                 &kp LG(F3)                &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
+&mt LEFT_SHIFT Z    &kp X          &kp C             &kp V                 &kp B                 &kp LANG2                 &kp LANG1         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_ALT        &kp LC(LG(Q))  &kp LG(UP_ARROW)  &mt LEFT_CONTROL TAB  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 3 DEL      &lt 2 BACKSPACE   &lt 1 ENTER                             &lt 6 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -84,10 +84,10 @@
 
         FUNCTION {
             bindings = <
-&kp F7            &kp F9            &kp F2            &kp LA(F4)        &kp LC(LS(R))                         &kp LC(C)           &kp LG(A)       &kp UP_ARROW    &kp LG(E)      &kp LC(V)
+&kp LEFT_GUI      &kp F9            &kp F2            &kp LA(F4)        &kp LC(LS(R))                         &kp LC(C)           &kp LG(A)       &kp UP_ARROW    &kp LG(E)      &kp LC(V)
 &kp LEFT_CONTROL  &kp F10           &kp F11           &kp LC(LS(V))     &kp LA(LC(D))     &trans      &trans  &kp LC(X)           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp LC(S)
 &kp LEFT_SHIFT    &kp LG(NUMBER_4)  &kp LG(NUMBER_3)  &kp LG(NUMBER_2)  &kp LG(NUMBER_1)  &trans      &trans  &kp LC(LEFT_ARROW)  &kp LC(RIGHT)   &kp LC(Z)       &kp LC(LS(Z))  &trans
-&trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                             &kp LS(LC(NUMBER_4))
+&kp LEFT_ALT      &trans            &trans            &trans            &trans            &trans      &trans  &trans                                                             &kp LS(LC(NUMBER_4))
             >;
         };
 
@@ -115,7 +115,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                                        &trans                  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans                      &trans                  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans                      &trans                  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans                      &trans                  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &lt_to_layer_0 3 DEL      &lt_to_layer_0 2 BACKSPACE  &lt_to_layer_0 1 ENTER                                &trans
             >;
         };
