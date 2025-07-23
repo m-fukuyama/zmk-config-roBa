@@ -87,7 +87,7 @@
 &kp LEFT_GUI      &kp F9            &kp F2            &kp LA(F4)        &kp LC(LS(R))                         &kp LC(C)           &kp LG(A)       &kp UP_ARROW    &kp LG(E)      &kp LC(V)
 &kp LEFT_CONTROL  &kp F10           &kp F11           &kp LC(LS(V))     &kp LA(LC(D))     &trans      &trans  &kp LC(X)           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp LC(S)
 &kp LEFT_SHIFT    &kp LG(NUMBER_4)  &kp LG(NUMBER_3)  &kp LG(NUMBER_2)  &kp LG(NUMBER_1)  &trans      &trans  &kp LC(LEFT_ARROW)  &kp LC(RIGHT)   &kp LC(Z)       &kp LC(LS(Z))  &trans
-&kp LEFT_ALT      &trans            &trans            &kp LCTRL         &kp LEFT_SHIFT    &trans      &trans  &trans                                                             &kp LS(LC(NUMBER_4))
+&kp LEFT_ALT      &trans            &kp TAB           &kp LCTRL         &kp LEFT_SHIFT    &trans      &trans  &trans                                                             &kp LS(LC(NUMBER_4))
             >;
         };
 
