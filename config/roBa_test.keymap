@@ -1,0 +1,97 @@
+/*
+ * Trackball Through-hole Continuity Test Keymap
+ * This keymap helps test which through-holes are connected
+ * by using GPIO pins to send/receive signals
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/ {
+    macros {
+        // Macro to cycle through test patterns
+        test_pattern_1: test_pattern_1 {
+            label = "TEST_PATTERN_1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1>;
+        };
+        
+        test_pattern_2: test_pattern_2 {
+            label = "TEST_PATTERN_2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2>;
+        };
+        
+        test_pattern_3: test_pattern_3 {
+            label = "TEST_PATTERN_3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N3>;
+        };
+        
+        test_pattern_4: test_pattern_4 {
+            label = "TEST_PATTERN_4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N4>;
+        };
+        
+        test_pattern_5: test_pattern_5 {
+            label = "TEST_PATTERN_5";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N5>;
+        };
+        
+        test_pattern_6: test_pattern_6 {
+            label = "TEST_PATTERN_6";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N6>;
+        };
+        
+        test_pattern_7: test_pattern_7 {
+            label = "TEST_PATTERN_7";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N7>;
+        };
+        
+        test_pattern_8: test_pattern_8 {
+            label = "TEST_PATTERN_8";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N8>;
+        };
+        
+        test_report: test_report {
+            label = "TEST_REPORT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp E &kp P &kp O &kp R &kp T &kp COLON &kp SPACE>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        test_layer {
+            label = "TEST";
+            bindings = <
+// ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+     &test_pattern_1 &test_pattern_2 &test_pattern_3 &test_pattern_4 &test_pattern_5 &test_pattern_6    &test_pattern_7 &test_pattern_8 &test_report    &bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1
+// ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+     &kp A          &kp B          &kp C          &kp D          &kp E          &kp F                &kp G          &kp H          &kp I          &kp J          &kp K          &kp L
+// ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+     &kp M          &kp N          &kp O          &kp P          &kp Q          &kp R                &kp S          &kp T          &kp U          &kp V          &kp W          &kp X
+// ╰──────────────┴──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────┴──────────────╯
+                                                   &kp Y          &kp Z          &kp SPACE            &kp ENTER      &kp BSPC       &kp DEL
+//                                               ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
+            >;
+        };
+    };
+};

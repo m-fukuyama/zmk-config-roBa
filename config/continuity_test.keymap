@@ -1,0 +1,69 @@
+/*
+ * Continuity Test Keymap
+ * Sends test results via USB serial
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    macros {
+        // Test macros that output pin status via keystrokes
+        test_start: test_start {
+            label = "TEST_START";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp S &kp T &kp A &kp R &kp T &kp SPACE
+                &kp T &kp E &kp S &kp T &kp ENTER
+            >;
+        };
+        
+        pin_high: pin_high {
+            label = "PIN_HIGH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp H &kp I &kp G &kp H &kp COLON &kp SPACE
+            >;
+        };
+        
+        pin_low: pin_low {
+            label = "PIN_LOW";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp L &kp O &kp W &kp COLON &kp SPACE
+            >;
+        };
+        
+        test_end: test_end {
+            label = "TEST_END";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp E &kp N &kp D &kp SPACE
+                &kp T &kp E &kp S &kp T &kp ENTER
+            >;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            label = "TEST";
+            bindings = <
+// ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+     &test_start    &kp N1         &kp N2         &kp N3         &kp N4         &kp N5               &kp N6         &kp N7         &kp N8         &kp N9         &kp N0         &test_end
+// ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+     &pin_high      &kp A          &kp B          &kp C          &kp D          &kp E                &kp F          &kp G          &kp H          &kp I          &kp J          &pin_low
+// ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+     &kp COMMA      &kp DOT        &kp SLASH      &kp SEMI       &kp SQT        &kp LBKT             &kp RBKT       &kp BSLH       &kp MINUS      &kp EQUAL      &kp GRAVE      &kp ENTER
+// ╰──────────────┴──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────┴──────────────╯
+                                                   &kp SPACE      &kp TAB        &kp BSPC             &kp DEL        &kp ESC        &kp ENTER
+//                                               ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
+            >;
+        };
+    };
+};
