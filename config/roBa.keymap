@@ -21,9 +21,14 @@
             key-positions = <0 1>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
+        virtual_desktop_r {
+            bindings = <&kp LG(RIGHT_ARROW)>;
             key-positions = <20 19>;
+        };
+
+        virtual_desktop_l {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <18 19>;
         };
     };
 
