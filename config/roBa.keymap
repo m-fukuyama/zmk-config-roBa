@@ -50,7 +50,7 @@
         launch_claude: launch_claude {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(LA(C)))>;
+            bindings = <&none &kp C &kp D &kp SPACE &kp TILDE &kp SLASH &kp W &kp S &kp SLASH &kp LS(M) &kp LS(H) &kp O &kp L &kp D &kp I &kp N &kp G &kp S &kp SLASH &kp S &kp K &kp Y &kp J &kp O &kp B &kp SPACE &kp AMPS &kp AMPS &kp SPACE &kp C &kp L &kp A &kp U &kp D &kp E &kp RET>;
             label = "LAUNCH_CLAUDE";
         };
     };
