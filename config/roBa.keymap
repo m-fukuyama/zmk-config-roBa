@@ -43,12 +43,14 @@
         f13_num: f13_num {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings
-                = <&macro_press &kp F13>
-                , <&macro_param_1to1>
-                , <&macro_tap &kp MACRO_PLACEHOLDER>
-                , <&macro_release &kp F13>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp F13 &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp F13>;
+
             label = "F13_NUM";
         };
 
@@ -159,10 +161,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &f13_num NUMBER_1  &f13_num NUMBER_2  &f13_num NUMBER_3  &f13_num NUMBER_4  &f13_num NUMBER_5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &f13_num NUMBER_6  &f13_num NUMBER_7  &f13_num NUMBER_8  &f13_num NUMBER_9  &f13_num NUMBER_0
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans             &trans             &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                      &trans
             >;
         };
     };
